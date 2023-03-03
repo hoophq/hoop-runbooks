@@ -12,4 +12,5 @@ AND country = {{ .country
                 | default "US"
                 | pattern "^[a-zA-Z]+$"
                 | squote }}
-AND lastname = {{ .lastname }}
+AND lastname = {{ .lastname
+                | squote }}
